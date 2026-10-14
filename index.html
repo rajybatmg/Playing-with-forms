@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <p>Complete all required information</p>
+
+    <div>
+        <form action="#" method="POST">
+
+            <!-- 1. Personal Information -->
+            <fieldset>
+                <legend>1. Personal Information</legend>
+
+                <div>
+                    <label for="first_name">First Name</label>
+                    <input
+                        type="text"
+                        id="first_name"
+                        name="first_name"
+                        placeholder="Enter first name"
+                        required
+                    >
+                </div>
+                <br>
+
+                <div>
+                    <label for="last_name">Last Name</label>
+                    <input
+                        type="text"
+                        id="last_name"
+                        name="last_name"
+                        placeholder="Enter last name"
+                        required
+                    >
+                </div>
+                 <br>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="student@email.com"
+                        required
+                    >
+                </div>
+                 <br>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+                 <br>
+
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                    >
+                </div>
+                 <br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                     <br>
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                    >
+                    <label for="male">Male</label>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                    >
+                    <label for="female">Female</label>
+                </fieldset>
+
+            </fieldset>
+
+            <!-- 2. Academic Information -->
+            <fieldset>
+                <legend>2. Academic Information</legend>
+                 <br>
+
+                <div>
+                    <label for="course">Select Course:</label>
+                    
+
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>
+                            Choose your course
+                        </option>
+                        <option value="IT">
+                            Information Technology
+                        </option>
+                        <option value="business">
+                            Global Business
+                        </option>
+                        <option value="arts">
+                            Arts
+                        </option>
+                    </select>
+                </div>
+                 <br>
+
+                <fieldset>
+                    <legend>Skills</legend>
+
+                    <input
+                        type="checkbox"
+                        id="html"
+                        name="skills"
+                        value="html"
+                    >
+                    <label for="html">HTML</label>
+
+                    <input
+                        type="checkbox"
+                        id="css"
+                        name="skills"
+                        value="css"
+                    >
+                    <label for="css">CSS</label>
+
+                    <input
+                        type="checkbox"
+                        id="javascript"
+                        name="skills"
+                        value="javascript"
+                    >
+                    <label for="javascript">JavaScript</label>
+                </fieldset>
+                 <br>
+
+                <div>
+                    <label for="experience">
+                        Rate your experience (0-10)
+                    </label>
+
+                    <input
+                        type="range"
+                        id="experience"
+                        name="experience"
+                        min="0"
+                        max="10"
+                        step="1"
+                        value="5"
+                    >
+                </div>
+
+            </fieldset>
+             <br>
+
+            <!-- 3. Additional Information -->
+            <fieldset>
+                <legend>3. Additional Information</legend>
+                 <br>
+
+                <div>
+                    <label for="bio">
+                        Tell us about yourself
+                    </label>
+                </div>
+
+                <div>
+                    <textarea
+                        id="bio"
+                        name="bio"
+                        rows="5"
+                        cols="40"
+                        maxlength="200"
+                        placeholder="Write a short introduction..."
+                    ></textarea>
+                </div>
+                 <br>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        value="agreed"
+                        required
+                    >
+                    <label for="terms">
+                        I agree to the Terms and Conditions
+                    </label>
+                </div>
+
+            </fieldset>
+             <br>
+
+            <!-- Form Buttons -->
+            <div>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

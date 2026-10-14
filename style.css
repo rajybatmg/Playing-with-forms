@@ -1,0 +1,17 @@
+h1{
+    text-decoration: underline;
+    color: rgb(183, 92, 92);
+}
+button[type="submit"]{
+    background-color: rgb(183, 92, 92);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="reset"]{
+    background-color: rgb(183, 92, 92);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+}
